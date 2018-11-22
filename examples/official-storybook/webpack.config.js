@@ -3,6 +3,14 @@ const { DefinePlugin, ContextReplacementPlugin } = require('webpack');
 
 module.exports = async (baseConfig, env, defaultConfig) => ({
   ...defaultConfig,
+  entry: {
+    ...defaultConfig.entry,
+    "editor.worker": 'monaco-editor/esm/vs/editor/editor.worker.js',
+    "json.worker": 'monaco-editor/esm/vs/language/json/json.worker',
+    "css.worker": 'monaco-editor/esm/vs/language/css/css.worker',
+    "html.worker": 'monaco-editor/esm/vs/language/html/html.worker',
+    "ts.worker": 'monaco-editor/esm/vs/language/typescript/ts.worker',
+  },
   module: {
     ...defaultConfig.module,
     rules: [

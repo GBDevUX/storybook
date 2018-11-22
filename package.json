@@ -113,6 +113,8 @@
     "lerna": "^3.4.3",
     "lint-staged": "^8.0.4",
     "lodash": "^4.17.11",
+    "monaco-editor": "^0.14.3",
+    "monaco-editor-core": "^0.14.6",
     "npmlog": "^4.1.2",
     "prettier": "^1.14.3",
     "raf": "^3.4.0",
