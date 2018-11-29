@@ -1,24 +1,23 @@
 module.exports = {
   presets: [
     ['@babel/preset-env', { shippedProposals: true }],
-    '@babel/preset-react',
     '@babel/preset-flow',
+    '@babel/preset-react',
   ],
   plugins: [
-    ['emotion', { sourceMap: true, autoLabel: true }],
-    'babel-plugin-add-react-displayname',
-    'babel-plugin-macros',
-    '@babel/plugin-syntax-dynamic-import',
-    '@babel/plugin-proposal-object-rest-spread',
     '@babel/plugin-proposal-class-properties',
-    '@babel/plugin-proposal-object-rest-spread',
     '@babel/plugin-proposal-export-default-from',
+    '@babel/plugin-proposal-object-rest-spread',
+    '@babel/plugin-syntax-dynamic-import',
     [
       '@babel/plugin-transform-runtime',
       {
         regenerator: true,
       },
     ],
+    'babel-plugin-add-react-displayname',
+    'babel-plugin-macros',
+    ['emotion', { sourceMap: true, autoLabel: true }],
   ],
   env: {
     test: {
@@ -32,12 +31,12 @@ module.exports = {
     },
     {
       test: [
-        './lib/core/src/server',
-        './lib/node-logger',
-        './lib/codemod',
         './addons/storyshots',
         './addons/storysource/src/loader',
         './app/**/src/server/**',
+        './lib/codemod',
+        './lib/core/src/server',
+        './lib/node-logger',
       ],
       presets: [
         [

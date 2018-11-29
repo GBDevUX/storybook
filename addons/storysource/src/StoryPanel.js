@@ -170,7 +170,7 @@ export default class StoryPanel extends Component {
     const { active } = this.props;
     const { source } = this.state;
 
-    return <Editor />;
+    return active ? <Editor /> : null;
 
     // return active ? (
     //   <SyntaxHighlighter

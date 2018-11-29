@@ -54,7 +54,9 @@ export default class CssResourcePanel extends Component {
     const { channel } = this.props;
     this.iframe = document.getElementById(storybookIframe);
     if (!this.iframe) {
-      throw new Error('Cannot find Storybook iframe');
+      // TODO: fix this, something is broken, I changed this temporarily to get stuff to render.
+      console.error('Cannot find Storybook iframe');
+      return;
     }
     channel.on('storybook/resources/add_cssresources', this.onAddCssresources);
   }
