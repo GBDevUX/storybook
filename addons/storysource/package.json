@@ -30,8 +30,6 @@
     "estraverse": "^4.2.0",
     "global": "^4.3.2",
     "loader-utils": "^1.1.0",
-    "monaco-editor": "^0.14.3",
-    "monaco-editor-core": "^0.14.6",
     "prettier": "^1.14.3",
     "prop-types": "^15.6.2",
     "react-syntax-highlighter": "^8.0.1"
